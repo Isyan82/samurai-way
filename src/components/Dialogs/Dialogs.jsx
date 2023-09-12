@@ -16,6 +16,11 @@ const Dialogs = ({data}) => {
             </div>
             <div className="messages">
                 {messagesItems}
+                <div className="dialogs__form">
+                    <textarea />
+                    <button>Add message</button>
+                </div>
+                
             </div>
         </div>
     )

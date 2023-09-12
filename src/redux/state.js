@@ -1,4 +1,4 @@
-const state = {
+let state = {
   profilePage: {
     posts: [
       { post: "Hello, how are you?", id: 1, likesCount: 10 },
@@ -32,17 +32,15 @@ const state = {
     ]
   }
 }
-// window.state = state
-// export const addPost = () => {
-//   let newPost = {
-//     id: state.profilePage.posts.length + 1,
-//     post: state.profilePage.newPostText,
-//     likesCount: 0
-//   }
-//   state.profilePage.posts.push(newPost)
-//   state.profilePage.newPostText = ''
-//   rerendetEntireTree(state)
-// }
+
+export const addPost = (postMessage) => {
+  let newPost = {
+    id: state.profilePage.posts.length + 1,
+    post: postMessage,
+    likesCount: 0
+  }
+  state.profilePage.posts.push(newPost)
+}
 
 // export const updateNewPostText = (newText) => {
 //   state.profilePage.newPostText = newText
