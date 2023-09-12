@@ -1,0 +1,14 @@
+.nav {
+  grid-area: nav;
+  background: tomato;
+  min-height: 100vh;
+}
+.nav__item {
+  padding: 10px;
+}
+.nav__item a {
+  text-decoration: none;
+}
+.nav__item a.active {
+  color: yellow;
+}

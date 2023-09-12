@@ -1,0 +1,14 @@
+.dialogs-page {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  padding: 20px;
+}
+.dialogs__item {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+.dialogs__item.active {
+  color: gold;
+}

@@ -1,0 +1,9 @@
+.post {
+  color: white;
+}
+
+.post img {
+  width: 50px;
+  background: white;
+  border-radius: 50%;
+}

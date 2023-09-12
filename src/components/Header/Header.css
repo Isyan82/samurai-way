@@ -1,0 +1,16 @@
+.header {
+  grid-area: header;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.header__logo {
+  height: 100%;
+}
+.header__logo svg {
+  height: 100%;
+  width: 60px;
+}
+.header__title {
+  text-align: center;
+}
