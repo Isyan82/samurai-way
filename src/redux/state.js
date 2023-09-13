@@ -34,22 +34,23 @@ let state = {
     ]
   }
 }
+window.state = state
 
-export const addPost = (postMessage) => {
+export const addPost = () => {
   let newPost = {
     id: state.profilePage.posts.length + 1,
-    post: postMessage,
+    post: state.profilePage.newPostText,
     likesCount: 0
   }
   state.profilePage.posts.push(newPost)
+  state.profilePage.newPostText = ''
   rerendetEntireTree(state)
-
 }
 
-// export const updateNewPostText = (newText) => {
-//   state.profilePage.newPostText = newText
-//   rerendetEntireTree(state)
-// }
+export const updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText
+  rerendetEntireTree(state)
+}
 
 // export const subscribe = (observer) => {
 //   rerendetEntireTree = observer

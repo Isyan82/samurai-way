@@ -4,12 +4,15 @@ import MyPosts from '../MyPosts/MyPosts'
 import './Profile.css'
 
 
-const Profile = ({data, addPost}) => {
-  const {posts} = data
+const Profile = ({profilePage, addPost, updateNewPostText}) => {
+  const {posts, newPostText} = profilePage
     return (
       <div className='content'>
         <ProfileInfo/>
-        <MyPosts posts={posts} addPost={addPost} />
+        <MyPosts posts={posts} 
+        addPost={addPost} 
+        newPostText={newPostText} 
+        updateNewPostText={updateNewPostText} />
       </div>
     )
 }
